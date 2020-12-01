@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="masterkr.view.mercedes"
+             Title="MERCEDES"
+             BackgroundColor="LightBlue">
+    <ContentPage.Content>
+        <StackLayout HorizontalOptions="Center" Margin="10">
+            <Image x:Name="kartinka"></Image>
+            <Label x:Name="header" Text="Модели MERCEDES:" FontSize="Medium" />
+            <Picker x:Name="picker" SelectedIndexChanged="picker_SelectedIndexChanged">
+                <Picker.Items>
+                    <x:String>MERCEDES S55 AMG W220</x:String>
+                    <x:String>MERCEDES E55 AMG W211</x:String>
+                    <x:String>MERCEDES C63 AMG W204</x:String>
+                    <x:String>MERCEDES CLS63 AMG W219</x:String>
+                </Picker.Items>
+            </Picker>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

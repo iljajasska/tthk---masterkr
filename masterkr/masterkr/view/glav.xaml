@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="masterkr.view.glav"
+             Title="Главная страница"
+             BackgroundColor="LightBlue">
+    <ContentPage.Content>
+        <StackLayout HorizontalOptions="Center" Margin="10">
+            <Image x:Name="kartinka"></Image>
+            <Label Text="Главная страница" Font="20" TextColor="Black" HorizontalTextAlignment ="Center"></Label>
+            <Label Text="Выберите в меню нужную вам марку, для того чтобы узнать всю информацию." TextColor="Black" HorizontalTextAlignment ="Center"></Label>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
