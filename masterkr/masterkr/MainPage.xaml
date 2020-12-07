@@ -14,7 +14,7 @@
                         <ListView.ItemTemplate>
                             <DataTemplate>
                                 <ImageCell Text="{Binding Text}" Detail="{Binding Detail}"
-                                       ImageSource="{Binding ImagePath}">
+                                       ImageSource="{Binding Kartina}">
                                 </ImageCell>
                             </DataTemplate>
                         </ListView.ItemTemplate>

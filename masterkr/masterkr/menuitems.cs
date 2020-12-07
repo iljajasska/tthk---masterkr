@@ -8,7 +8,7 @@ namespace masterkr
     {
         public string Text { get; set; }
         public string Detail { get; set; }
-        public string ImagePath { get; set; }
-        public Type TargetPage { get; set; }
+        public string Kartina { get; set; }
+        public Type Trgtstr { get; set; }
     }
 }

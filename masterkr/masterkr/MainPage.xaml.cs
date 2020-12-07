@@ -13,7 +13,6 @@ namespace masterkr
         public MainPage()
         {
             InitializeComponent();
-            kartinka.Source = ImageSource.FromFile("garry.jpg");
             infa.ItemsSource = GetMenuList();
             var homepage = typeof(view.glav);
             Detail = new NavigationPage((Page)Activator.CreateInstance(homepage));
@@ -26,22 +25,22 @@ namespace masterkr
             {
                 Text = "AUDI",
                 Detail = "Все о AUDI",
-                ImagePath = "audi.png",
-                TargetPage = typeof(view.audi)
+                Kartina = "audi.png",
+                Trgtstr = typeof(view.audi)
             });
             list.Add(new menuitems()
             {
                 Text = "BMW",
                 Detail = "Все о BMW",
-                ImagePath = "bmw.png",
-                TargetPage = typeof(view.bmw)
+                Kartina = "bmw.png",
+                Trgtstr = typeof(view.bmw)
             });
             list.Add(new menuitems()
             {
                 Text = "MERCEDES",
                 Detail = "Все о MERCEDES",
-                ImagePath = "mercedes.png",
-                TargetPage = typeof(view.mercedes)
+                Kartina = "mercedes.png",
+                Trgtstr = typeof(view.mercedes)
             });
             return list;
         }
@@ -49,7 +48,7 @@ namespace masterkr
         private void infa_ItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
             var selected = (menuitems)e.SelectedItem;
-            Type selectedpage = selected.TargetPage;
+            Type selectedpage = selected.Trgtstr;
             Detail = new NavigationPage((Page)Activator.CreateInstance(selectedpage));
             IsPresented = false;
         }
