@@ -16,6 +16,7 @@
                     <x:String>BMW X5 E70</x:String>
                 </Picker.Items>
             </Picker>
+            <Image Source="bmw.png" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

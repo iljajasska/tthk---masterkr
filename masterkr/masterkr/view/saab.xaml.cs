@@ -10,16 +10,11 @@ using Xamarin.Forms.Xaml;
 namespace masterkr.view
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class mercedes : ContentPage
+    public partial class saab : ContentPage
     {
-        public mercedes()
+        public saab()
         {
             InitializeComponent();
-        }
-
-        void picker_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            header.Text = "Модель: " + picker.Items[picker.SelectedIndex];
         }
     }
 }

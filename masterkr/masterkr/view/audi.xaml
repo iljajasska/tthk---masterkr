@@ -16,6 +16,7 @@
                     <x:String>AUDI R8 V10</x:String>
                 </Picker.Items>
             </Picker>
+            <Image Source="audi.png" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

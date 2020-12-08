@@ -16,6 +16,7 @@
                     <x:String>MERCEDES CLS63 AMG W219</x:String>
                 </Picker.Items>
             </Picker>
+            <Image Source="mercedes.png" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
